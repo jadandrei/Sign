@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <br>
+        <h1 id="text">Sign Up</h1>
+        <h2 id="text">Get Ready to <br> PLAY, EXPLORE, CONQUER.</h2>
+        <h3 id="text">Please fill in this form to create an account</h3>
+        
+        <br>
+        <hr>
+
+        <br><br>
+        <strong id="text">Email</strong>
+        <br><br>
+
+        <div class="inputemail"></div> 
+            <input class="input-email" placeholder="Enter Email">
+        </div>
+
+        <br><br>
+        <strong id="text">Password</strong>
+        <br><br>
+
+        <div class="inputpass"></div>
+            <center><input type="password" id="show" placeholder="Enter Password"></center>
+            <img src="open.png" id="eye">
+        </div>
+
+        <br><br>
+        <strong id="text">Confirm Password</strong>
+        <br><br>
+
+        <div class="conpass"></div>
+            <center><input type="password"  id="show1" placeholder="Confirm Password"></center>
+            <img src="open.png" id="eye1">       
+        </div>
+
+
+
+
+<script>
+    let eye = document.getElementById("eye");
+    let pass = document.getElementById("show");
+
+    eye.onclick = function(){
+        if(pass.type == "password"){
+            pass.type = "text";
+            eye.src ="open.png";
+          
+        }else{
+            pass.type = "password";
+            eye.src ="open.png"
+
+
+        }
+    }
+</script>
+
+<script>
+    let eye1 = document.getElementById("eye1");
+    let pass1 = document.getElementById("show1");
+
+    eye1.onclick = function(){
+        if(pass1.type == "password"){
+            pass1.type = "text";
+            eye1.src ="open.png";
+          
+        }else{
+            pass1.type = "password";
+            eye1.src ="open.png"
+
+
+        }
+    }
+</script>
+
+
+<br><br>
+    <label>
+        <div class="rememberme">
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </div>   
+    </label>
+        <h3 id="text">By creating an account you agree to our Terms & Privacy.</h3>
+        
+        <button class="cncl"> Cancel </button>   
+        <button class="sgnup"> Sign Up </button>  
+
+
+
+<br><br><br>
+    <a href="https://www.facebook.com/"><img src="fb.png" width="50px"></a>
+    <a href="https://www.instagram.com/"><img src="ig.png" width="50px"></a>
+    <a href="https://www.google.com/"><img src="gl.png" width="50px"></a>
+
+<br><br><br><br>
+<hr>
+
+
+    </center>
+</body>
+</html>
